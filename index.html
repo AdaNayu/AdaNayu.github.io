@@ -23,8 +23,17 @@
       font-family: sans-serif;
       font-size: 2em;
       background: white;
-      height: 120px;
       margin: 0;
+      padding-top: .5em;
+      padding-bottom: 0px;
+      padding-right: .5em;
+      margin-bottom: 0px;
+      padding-left: .5em;
+      max-width: 100%;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      margin-bottom: -1px;
+      border-right: 1px solid
     }
 
     nav#navigation {
@@ -73,6 +82,8 @@
     section#content {
       background: white;
       border-bottom: 1px solid black;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
       padding: 1em;
     }
 
@@ -100,7 +111,25 @@
       background-image: repeating-linear-gradient(45deg, #1b1b1b 0, #1b1b1b 0.8px, #f9f9fd 0, #f9f9fd 50%);
       background-size: 8px 8px;
       ;
-      filter: invert(94%);
+      filter: invert(2%);
+    }
+
+    div#line {
+      border-top: 1px solid;
+      width: 0em;
+      margin-left: auto;
+      background: white;
+    }
+
+    @media (min-width: 720px) {
+      div#line {
+        border-top: 1px solid;
+        width: 31.5em;
+      }
+
+      section#head h1 {
+        max-width: max-content;
+      }
     }
   </style>
 </head>
@@ -110,13 +139,14 @@
   </section>
   <section id="container">
     <section id="head">
-      <h1 style="padding-top: .5em;padding-bottom: 0px;padding-right:.5em;margin-bottom: -81px;padding-left: .5em; max-width: max-content;border-top: 1px solid black;">Adashino Nayuta</h1>
-      <div style="height: 1em; background: white"></div>
+      <h1 style="">Adashino Nayuta</h1>
+      <div id="line"></div>
+      <div style="height: 1em; background: white; border-left: 1px solid black;border-right: 1px solid;"></div>
       <nav id="navigation">
         <ul style="padding-left: 0px;">
-          <li><a href="#" style="border-left: none;">Home</a></li>
+          <li><a href="#" style="">Home</a></li>
           <li><a href="#">Writting</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#" style="border-right: 1px solid;">About</a></li>
         </ul>
       </nav>
     </section>
