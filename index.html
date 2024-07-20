@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 2em auto;
+      /*! background: black; */
+    }
+
+    section#container {
+      font-family: sans-serif;
+    }
+
+    section#head {
+      /*! background: white; */
+      display: inline-block;
+      /*! padding-bottom: 1em; */
+      width: 100%;
+    }
+
+    section#head h1 {
+      font-family: sans-serif;
+      font-size: 2em;
+      background: white;
+      height: 120px;
+      margin: 0;
+    }
+
+    nav#navigation {
+      /*! flex: 1; */
+      /*! display: flex; */
+      width: 100%;
+    }
+
+    nav#navigation a {
+      padding: 1em;
+      margin: 0px;
+      border: 1px solid;
+      box-sizing: border-box;
+      border-right: 0px solid;
+      color: black;
+      background: white;
+      width: 100%;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    nav#navigation ul {
+      display: inline-flex;
+      list-style-type: none;
+      width: 100%;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    nav#navigation li {
+      flex: 1;
+    }
+
+    nav#navigation a:hover {
+      color: white;
+      background: black;
+      border-color: black;
+    }
+
+    nav#navigation a:nth-last-child(1) {
+      border-left: 1px solid;
+    }
+
+    section#content {
+      background: white;
+      border-bottom: 1px solid black;
+      padding: 1em;
+    }
+
+    section#content p {
+      line-height: 1.5em;
+      font-size: 1.2em;
+      font-family: monospace;
+    }
+
+    section#footer {
+      width: max-content;
+      margin: auto 0 auto auto;
+      border: 1px solid;
+      border-top: 0px solid;
+    }
+
+    section#footer p {
+      margin: 0em;
+      padding: .5em;
+      background: white;
+      text-align: right;
+    }
+
+    html {
+      background-image: repeating-linear-gradient(45deg, #1b1b1b 0, #1b1b1b 0.8px, #f9f9fd 0, #f9f9fd 50%);
+      background-size: 8px 8px;
+      ;
+      filter: invert(94%);
+    }
+  </style>
+</head>
+
+<body>
+  <section id="background">
+  </section>
+  <section id="container">
+    <section id="head">
+      <h1 style="padding-top: .5em;padding-bottom: 0px;padding-right:.5em;margin-bottom: -81px;padding-left: .5em; max-width: max-content;border-top: 1px solid black;">Adashino Nayuta</h1>
+      <div style="height: 1em; background: white"></div>
+      <nav id="navigation">
+        <ul style="padding-left: 0px;">
+          <li><a href="#" style="border-left: none;">Home</a></li>
+          <li><a href="#">Writting</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="content">
+      <h2>Welcome</h2>
+      <p>Adashino Nayuta — AdaNayu for short. Learn programming still new, OCaml is my current pratice. Nice to meet you.</p>
+    </section>
+    <section id="footer">
+      <p>GitHub: <a href="https://github.com/AdaNayu" target="blank" style="color:black">@AdaNayu</a></p>
+    </section>
+  </section>
+
+</body>
+
+</html>
