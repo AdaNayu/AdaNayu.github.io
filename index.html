@@ -1,6 +1,8 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Adashino Nayuta</title>
   <style>
     body {
       max-width: 800px;
@@ -33,7 +35,8 @@
       border-top: 1px solid black;
       border-left: 1px solid black;
       margin-bottom: -1px;
-      border-right: 1px solid
+      border-right: 1px solid;
+      user-select: none;
     }
 
     nav#navigation {
@@ -63,6 +66,7 @@
       width: 100%;
       flex-wrap: wrap;
       margin: 0;
+      user-select: none;
     }
 
     nav#navigation li {
@@ -121,6 +125,12 @@
       background: white;
     }
 
+    div#homepage_greet_link {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+
     @media (min-width: 720px) {
       div#line {
         border-top: 1px solid;
@@ -129,6 +139,15 @@
 
       section#head h1 {
         max-width: max-content;
+      }
+
+      div#homepage_greet_link {
+        flex-direction: row;
+      }
+
+      div#homepage_greet_link section#basket:nth-child(2) {
+        margin-left: 1em;
+        margin-top: 0em;
       }
     }
 
@@ -145,10 +164,26 @@
       padding: .5em;
       margin: 0px;
       border-bottom: 1px solid;
+      user-select: none;
     }
 
     section#basket #basket_content {
       padding: .5em;
+    }
+
+    a {
+      color: black;
+    }
+
+    img {
+      user-select: none;
+    }
+
+    ::selection {
+      /*     background: #feaeee; */
+      background: #febe2e;
+      color: black;
+      margin: .5em 0em;
     }
   </style>
 </head>
@@ -170,16 +205,16 @@
       </nav>
     </section>
     <section id="content">
-      <div style="display: flex;justify-content: space-evenly;">
+      <div id="homepage_greet_link" style="">
         <section id="basket">
           <h2 id="basket_title">Welcome</h2>
           <section id="basket_content">
             <p>I, Adashino Nayuta — AdaNayu for short. Learn programming still new, OCaml is my current pratice. Nice to meet you.</p>
             <p>My personal site, place for my self-expression. Still lot WIP. I not fan SNS platform.</p>
-            <p>My Pfp credit: RinRine39.</p>
+            <p>My Pfp credit: <a href="https://www.youtube.com/channel/UC2B1Oz8ogVQgqjVnN9SO9IQ" target="blank">RinRinne39</a>.</p>
           </section>
         </section>
-        <section id="basket" style="margin-top: 0em; margin-left:1em;">
+        <section id="basket">
           <h2 id="basket_title">Link Me</h2>
           <section id="basket_content">
             <img src="https://adanayu.github.io/button.jpg">
