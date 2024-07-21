@@ -1,17 +1,28 @@
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Adashino Nayuta</title>
   <style>
+    @font-face {
+      font-family: 'Atkinson Hyperlegible';
+      src: url('/fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
+        url('/fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
+        url('/fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
+      ;
+    }
+
     body {
       max-width: 800px;
       margin: 2em auto;
       /*! background: black; */
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      font-weight: 400;
+      font-style: normal;
     }
 
     section#container {
-      font-family: sans-serif;
+      font-family: "Atkinson Hyperlegible", sans-serif;
     }
 
     section#head {
@@ -22,7 +33,7 @@
     }
 
     section#head h1 {
-      font-family: sans-serif;
+      font-family: "Atkinson Hyperlegible", sans-serif;
       font-size: 2em;
       background: white;
       margin: 0;
@@ -48,7 +59,7 @@
     nav#navigation a {
       padding: 1em;
       margin: 0px;
-      border: 1px solid;
+      border: 1px solid black;
       box-sizing: border-box;
       border-right: 0px solid;
       color: black;
@@ -79,8 +90,9 @@
       border-color: black;
     }
 
-    nav#navigation a:nth-last-child(1) {
-      border-left: 1px solid;
+    nav#navigation a:nth-last-child(1),
+    nav#navigation a:nth-last-child(1):hover {
+      border-left: 1px solid black;
     }
 
     section#content {
@@ -92,9 +104,8 @@
     }
 
     section#content p {
-      line-height: 1.5em;
-      font-size: 1.2em;
-      font-family: monospace;
+      font-size: 1em;
+      font-family: "Atkinson Hyperlegible", sans-serif;
     }
 
     section#footer {
@@ -131,10 +142,10 @@
       flex-direction: column;
     }
 
-    @media (min-width: 720px) {
+    @media (min-width: 800px) {
       div#line {
         border-top: 1px solid;
-        width: 31.5em;
+        width: 519px;
       }
 
       section#head h1 {
@@ -168,7 +179,7 @@
     }
 
     section#basket #basket_content {
-      padding: .5em;
+      padding: 1em;
     }
 
     a {
@@ -177,6 +188,11 @@
 
     img {
       user-select: none;
+      filter: grayscale(1);
+    }
+
+    img:hover {
+      filter: grayscale(0);
     }
 
     ::selection {
@@ -210,8 +226,8 @@
           <h2 id="basket_title">Welcome</h2>
           <section id="basket_content">
             <p>I, Adashino Nayuta — AdaNayu for short. Learn programming still new, OCaml is my current pratice. Nice to meet you.</p>
-            <p>My personal site, place for my self-expression. Still lot WIP. I not fan SNS platform.</p>
-            <p>My Pfp credit: <a href="https://www.youtube.com/channel/UC2B1Oz8ogVQgqjVnN9SO9IQ" target="blank">RinRinne39</a>.</p>
+            <p>My personal site, still lot work in progress, as place for my (virtual-based) self-expression — I not fan of social media.</p>
+            <p style="display:none">My Pfp credit: <a href="https://www.youtube.com/channel/UC2B1Oz8ogVQgqjVnN9SO9IQ" target="blank">RinRinne39</a>.</p>
           </section>
         </section>
         <section id="basket">
@@ -223,7 +239,7 @@
         </section>
       </div>
       <section id="basket">
-        <h2 id="basket_title">Coooru Site</h2>
+        <h2 id="basket_title">Cool Websites</h2>
         <section id="basket_content">
           <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt="my site inspiration"></a>
           <a href="https://medjed.nekoweb.org/"><img src="https://medjed.nekoweb.org/images/button.jpg"></a>
