@@ -131,6 +131,25 @@
         max-width: max-content;
       }
     }
+
+    section#basket {
+      border: 1px solid;
+    }
+
+    section#basket:nth-child(2) {
+      margin-top: 1em;
+      /*! margin-left: 1em; */
+    }
+
+    section#basket #basket_title {
+      padding: .5em;
+      margin: 0px;
+      border-bottom: 1px solid;
+    }
+
+    section#basket #basket_content {
+      padding: .5em;
+    }
   </style>
 </head>
 
@@ -151,11 +170,40 @@
       </nav>
     </section>
     <section id="content">
-      <h2>Welcome</h2>
-      <p>Adashino Nayuta — AdaNayu for short. Learn programming still new, OCaml is my current pratice. Nice to meet you.</p>
+      <div style="display: flex;justify-content: space-evenly;">
+        <section id="basket">
+          <h2 id="basket_title">Welcome</h2>
+          <section id="basket_content">
+            <p>I, Adashino Nayuta — AdaNayu for short. Learn programming still new, OCaml is my current pratice. Nice to meet you.</p>
+            <p>My personal site, place for my self-expression. Still lot WIP. I not fan SNS platform.</p>
+            <p>My Pfp credit: RinRine39.</p>
+          </section>
+        </section>
+        <section id="basket" style="margin-top: 0em; margin-left:1em;">
+          <h2 id="basket_title">Link Me</h2>
+          <section id="basket_content">
+            <img src="https://adanayu.github.io/button.jpg">
+            <textarea readonly="" style="margin-top: .5em">&lt;a href="https://adanayu.github.io"&gt;&lt;img src="https://adanayu.github.io/button.jpg"&gt;&lt;/img&gt;&lt;/a&gt;</textarea>
+          </section>
+        </section>
+      </div>
+      <section id="basket">
+        <h2 id="basket_title">Coooru Site</h2>
+        <section id="basket_content">
+          <a href="https://melankorin.net/"><img src="https://melankorin.net/assets/img/buttons/button-1.gif" alt="my site inspiration"></a>
+          <a href="https://medjed.nekoweb.org/"><img src="https://medjed.nekoweb.org/images/button.jpg"></a>
+          <a href="https://rui.nekoweb.org/">
+            <img src="https://rui.nekoweb.org/buttons/ruibutton3.png" title="click me!">
+          </a>
+        </section>
+      </section>
+      <section>
+      </section>
+
     </section>
+
     <section id="footer">
-      <p>GitHub: <a href="https://github.com/AdaNayu" target="blank" style="color:black">@AdaNayu</a></p>
+      <p><a href="https://adanayu.github.io"><img src="https://adanayu.github.io/button.jpg"></a></p>
     </section>
   </section>
 
