@@ -1,0 +1,275 @@
+<html lang="en"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Adashino Nayuta</title>
+  <style>
+    @font-face {
+      font-family: 'Atkinson Hyperlegible';
+      src: url('/fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
+        url('/fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
+        url('/fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
+      ;
+    }
+
+    body {
+      max-width: 800px;
+      margin: 2em auto;
+      /*! background: black; */
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    section#container {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+    }
+
+    section#head {
+      /*! background: white; */
+      display: inline-block;
+      /*! padding-bottom: 1em; */
+      width: 100%;
+    }
+
+    section#head h1 {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      font-size: 2em;
+      background: white;
+      margin: 0;
+      padding-top: .5em;
+      padding-bottom: 0px;
+      padding-right: .5em;
+      margin-bottom: 0px;
+      padding-left: .5em;
+      max-width: 100%;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      margin-bottom: -1px;
+      border-right: 1px solid;
+      user-select: none;
+    }
+
+    nav#navigation {
+      /*! flex: 1; */
+      /*! display: flex; */
+      width: 100%;
+    }
+
+    nav#navigation a {
+      padding: 1em;
+      margin: 0px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      border-right: 0px solid;
+      color: black;
+      background: white;
+      width: 100%;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    nav#navigation ul {
+      display: inline-flex;
+      list-style-type: none;
+      width: 100%;
+      flex-wrap: wrap;
+      margin: 0;
+      user-select: none;
+    }
+
+    nav#navigation li {
+      flex: 1;
+    }
+
+    nav#navigation a:hover {
+      color: white;
+      background: black;
+      border-color: black;
+    }
+
+    nav#navigation a:nth-last-child(1),
+    nav#navigation a:nth-last-child(1) a:hover {
+      border-left: 1px solid black;
+    }
+
+    section#content {
+      background: white;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      padding: 1em;
+    }
+
+    section#content p {
+      font-size: 1em;
+      font-family: "Atkinson Hyperlegible", sans-serif; 
+      line-height: 1.5em;
+    }
+
+    section#footer {
+      width: max-content;
+      margin: auto 0 auto auto;
+      border: 1px solid;
+      border-top: 0px solid;
+    }
+
+    section#footer p {
+      margin: 0em;
+      padding: .5em;
+      background: white;
+      text-align: right;
+    }
+
+    html {
+      background-image: repeating-linear-gradient(45deg, #f9f9fd 0, #f9f9fd 0.8px, #1b1b1b 0, #1b1b1b 50%);
+      background-size: 8px 8px;
+      ;
+      filter: invert(2%);
+    }
+
+    div#line {
+      border-top: 1px solid;
+      width: 0em;
+      margin-left: auto;
+      background: white;
+    }
+
+    div#homepage_greet_link {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+
+    @media (min-width: 800px) {
+      div#line {
+        border-top: 1px solid;
+        width: 519px;
+      }
+
+      section#head h1 {
+        max-width: max-content;
+      }
+
+      div#homepage_greet_link {
+        flex-direction: row;
+      }
+
+      div#homepage_greet_link section#basket:nth-child(2) {
+        margin-left: 1em;
+        margin-top: 0em;
+      }
+    }
+
+    section#basket {
+      border: 1px solid;
+    }
+
+    section#basket:nth-child(2) {
+      margin-top: 1em;
+      /*! margin-left: 1em; */
+    }
+
+    section#basket #basket_title {
+      padding: .5em;
+      margin: 0px;
+      border-bottom: 1px solid;
+      user-select: none;
+    }
+
+    section#basket #basket_content {
+      padding: 1em;
+    }
+
+    a {
+      color: black;
+    }
+
+    img {
+      user-select: none;
+      filter: grayscale(1);
+    }
+
+    img:hover {
+      filter: grayscale(0);
+    }
+
+    ::selection {
+      /*     background: #feaeee; */
+      background: #febe2e;
+      color: black;
+      margin: .5em 0em;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="background">
+  </section>
+  <section id="container">
+    <section id="head">
+      <h1 style="">Adashino Nayuta</h1>
+      <div id="line"></div>
+      <div style="height: 1em; background: white; border-left: 1px solid black;border-right: 1px solid;"></div>
+      <nav id="navigation">
+        <ul style="padding-left: 0px;">
+          <li><a style="" href="/">Home</a></li>
+          <li><a href="#">Writting</a></li>
+          <li><a style="border-right: 1px solid black;" href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="content">
+      <div id="homepage_greet_link" style="">
+        <section id="basket">
+          <h2 id="basket_title">Who meee ?</h2>
+          <section id="basket_content" style="display:flex; padding: .5em; margin: auto;">
+  <img src="https://avatars.githubusercontent.com/u/18607946?v=4" alt="image" width="150" height="150" style="border-radius:100%;margin: auto;">
+            <p>You can know me as Adashino Nayuta — AdaNayu for short. Ordinary student who learn to code, currently interested with computer science.</p>
+            
+            <p style="display:none">My Pfp credit: <a href="https://www.youtube.com/channel/UC2B1Oz8ogVQgqjVnN9SO9IQ" target="blank">RinRinne39</a>.</p>
+          </section>
+        </section>
+        <section id="basket">
+          
+          <section id="basket_content" style="overflow: auto; max-width: 350px; height: 200px; filter: grayscale(0) !important; padding: .5em">
+ 
+ 
+  <a href="https://www.theotaku.com/quizzes/view/4097/what_dere_type_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/4097_Kuudere.jpg" alt="What Dere Type Are You?" width="300"><br></a>
+  
+  <a href="https://www.theotaku.com/quizzes/view/4069/what_type_of_otaku_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/4069_Fan.jpg" alt="What type of otaku are you?" width="300"><br></a>
+  
+  
+  
+  
+          <section style="display: flex; padding-top: 1em;">
+<a href="https://web.archive.org/web/20060414140459/http://home.uchicago.edu/~alexis/ostan.htm" target="new" width="" style="margin: auto;">
+<img src="https://web.archive.org/web/20060414140459im_/http://home.uchicago.edu/~alexis/longhorn.jpg" border="0" width="100">
+</a><br>
+<p align="left" style="padding-left: 1em; font-size: .8em"> You are Longhorn, the unreleased new version of Windows. No one knows much about you. You’re very mysterious, but will you ever be released?</p><p>   
+</p></section></section>
+        </section>
+      </div>
+      <section id="basket">
+        <h2 id="basket_title">Credits</h2>
+        <section id="basket_content">
+  <ul style="list-style: square;line-height: 1.5em;">
+    <li>The web design influenced by <a href="https://melankorin.net">Melankorin</a> and <a href="https://mausoleum.me/">Mausoleume</a> (check them out, their sites cooooooollll), the design known as Swiss's Design.</li><li>Made with Mozilla Firefox inspect element</li>
+    <li>My PFP is <a href="https://www.youtube.com/channel/UC2B1Oz8ogVQgqjVnN9SO9IQ" alt="she pretty">RinRinne39</a> (the chara also the artist).</li><li>Typeface: Atkinson Hyperlegible by <a href="https://brailleinstitute.org">Braille Institute of America</a>, font that designed with accesiblity in mind (according the site).</li><li>Hosted at GitHub Pages, Hey visit my GitHub <a href="https://github.com/AdaNayu">@AdaNayu</a>.</li>
+  </ul>
+</section>
+      </section>
+      <section>
+      </section>
+
+    </section>
+
+    <section id="footer">
+      <p><a href="https://adanayu.github.io"><img src="https://adanayu.github.io/button.jpg"></a></p>
+    </section>
+  </section>
+
+
+
+
+</body></html>
